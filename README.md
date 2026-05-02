@@ -1,7 +1,7 @@
 # 🩺 Sistema de Inteligência para Diagnóstico Cardíaco
 
 ## 📌 Objetivo e Contexto
-Este projeto desenvolve uma ferramenta de auxílio diagnóstico baseada em **Inteligência Artificial** para a classificação de risco cardíaco (**Alto Risco vs. Baixo Risco**). Utilizando o dataset clínico [Heart Disease Prediction (Kaggle)](https://www.kaggle.com/datasets/aminasalamt/heart-disease-prediction-using-machine-learning/data), o sistema identifica padrões complexos em variáveis de exames para prever a probabilidade de patologias cardíacas com alta precisão.
+Este projeto desenvolve uma ferramenta de auxílio diagnóstico baseada em **Inteligência Artificial** para a classificação de risco cardíaco (**Alto Risco vs. Baixo Risco**). Utilizando o dataset clínico [Heart Disease Prediction (Kaggle)](https://www.kaggle.com/datasets/aminasalamt/heart-disease-prediction-using-machine-learning/data), o sistema identifica padrões complexos em variáveis de exames para prever a probabilidade de patologias cardíacas.
 
 ---
 
