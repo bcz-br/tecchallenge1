@@ -1,37 +1,256 @@
-Objetivo e Contexto
-Este projeto desenvolve uma ferramenta de auxílio diagnóstico baseada em Inteligência Artificial para a classificação de risco cardíaco (Alto Risco vs. Baixo Risco). Utilizando o dataset clínico Heart Disease Prediction [Kaggle](https://www.kaggle.com/datasets/aminasalamt/heart-disease-prediction-using-machine-learning/data), o sistema identifica padrões complexos em variáveis de exames para prever a probabilidade de patologias cardíacas com maior precisão.
+Aqui está o conteúdo do seu `README.md` totalmente formatado em Markdown, com uma estrutura profissional, ícones pertinentes e blocos de código prontos para uso.
 
-Metodologia e Experimentação
+---
+
+# 🩺 Sistema de Inteligência para Diagnóstico Cardíaco
+
+## 📌 Objetivo e Contexto
+Este projeto desenvolve uma ferramenta de auxílio diagnóstico baseada em **Inteligência Artificial** para a classificação de risco cardíaco (**Alto Risco vs. Baixo Risco**). Utilizando o dataset clínico [Heart Disease Prediction (Kaggle)](https://www.kaggle.com/datasets/aminasalamt/heart-disease-prediction-using-machine-learning/data), o sistema identifica padrões complexos em variáveis de exames para prever a probabilidade de patologias cardíacas com alta precisão.
+
+---
+
+## 🧪 Metodologia e Experimentação
 O núcleo do projeto baseia-se em uma abordagem comparativa dividida em duas frentes principais:
 
-1. Análise de Agrupamento e Anomalias (Não Supervisionado):
+### 1. 🔍 Análise de Agrupamento e Anomalias (Não Supervisionado)
+*   **K-Means vs. Isolation Forest**: Foi realizado um estudo comparativo para avaliar qual algoritmo é mais eficaz na segmentação natural dos grupos de risco.
+*   **Propósito**: Identificar se os dados permitem uma separação clara em clusters (**K-Means**) ou se os casos de risco se comportam como anomalias estatísticas (**Isolation Forest**).
 
-K-Means vs. Isolation Forest: Foi realizado um estudo comparativo entre estes dois algoritmos para avaliar qual deles é mais eficaz na segmentação natural dos grupos de risco.
+### 2. 📈 Modelagem Preditiva (Supervisionado)
+*   **Regressão Logística vs. Random Forest**: Implementação de classificadores para determinar a melhor arquitetura de predição.
+*   **Diferencial**: Enquanto a **Regressão Logística** oferece uma interpretação estatística linear, o **Random Forest** captura relações não-lineares e interações complexas, visando maximizar a acurácia e o *recall* do diagnóstico.
 
-O objetivo foi identificar se a estrutura dos dados clínicos permite uma separação clara de clusters (K-Means) ou se os casos de risco se comportam como anomalias estatísticas dentro da amostra (Isolation Forest).
-
-2. Modelagem Preditiva (Supervisionado):
-
-Regressão Logística vs. Random Forest: Implementação de modelos classificadores para determinar a melhor arquitetura de predição.
-
-Enquanto a Regressão Logística oferece uma interpretação estatística clara das variáveis, o Random Forest foi explorado para capturar relações não-lineares e interações complexas entre os dados clínicos, buscando maximizar a acurácia e o recall do diagnóstico.
+---
 
 ## 📊 Pipeline de Dados
+O fluxo de trabalho está consolidado no notebook `main.ipynb` e segue as etapas:
 
-O fluxo de trabalho no notebook `main.ipynb` segue as etapas:
-
-1.  **Coleta**: Dados carregados localmente da pasta `/data`.
-2.  **Pré-processamento**:
+1.  **📥 Coleta**: Dados carregados localmente da pasta `/data`.
+2.  **⚙️ Pré-processamento**:
     *   **Encoding**: Transformação de variáveis categóricas para formato numérico.
-    *   **Normalização**: Escalonamento de recursos para garantir que todas as variáveis contribuam igualmente.
-    *   **PCA (Principal Component Analysis)**: Redução de dimensionalidade para extração das características mais relevantes.
-3.  **Modelagem**:
-    *   **Não Supervisionado**: Agrupamento com `K-Means` e detecção de anomalias com `Isolation Forest`.
-    *   **Supervisionado**: Classificação através de `Regressão Logística` e `Random Forest`.
+    *   **Normalização**: Escalonamento de recursos para equilíbrio das variáveis.
+    *   **PCA (Principal Component Analysis)**: Redução de dimensionalidade para extração de componentes relevantes.
+3.  **🤖 Modelagem**:
+    *   **Não Supervisionado**: Agrupamento (`K-Means`) e Detecção de Anomalias (`Isolation Forest`).
+    *   **Supervisionado**: Classificação via `Regressão Logística` e `Random Forest`.
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
+*   **Linguagem**: ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat&logo=python&logoColor=white)
+*   **Machine Learning**: `Scikit-learn`
+*   **Análise de Dados**: `Pandas`, `NumPy`
+*   **Visualização**: `Seaborn`, `Matplotlib`
+*   **Containerização**: ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
-*   **Linguagem**: Python 3.11
-*   **Bibliotecas de ML**: Scikit-learn
-*   **Manipulação e Visualização**: Pandas, NumPy, Seaborn, Matplotlib
-*   **Containerização**: 
+---
+
+## 🚀 Como Testar
+
+### 💻 Via Jupyter Notebook (Local)
+1.  **Instale as dependências**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+2.  **Execute a aplicação**:
+    Abra o Jupyter e execute o arquivo `main.ipynb`.
+
+###Aqui está o conteúdo do seu `README.md` totalmente formatado em Markdown, com uma estrutura profissional, ícones pertinentes e blocos de código prontos para uso.
+
+---
+
+# 🩺 Sistema de Inteligência para Diagnóstico Cardíaco
+
+## 📌 Objetivo e Contexto
+Este projeto desenvolve uma ferramenta de auxílio diagnóstico baseada em **Inteligência Artificial** para a classificação de risco cardíaco (**Alto Risco vs. Baixo Risco**). Utilizando o dataset clínico [Heart Disease Prediction (Kaggle)](https://www.kaggle.com/datasets/aminasalamt/heart-disease-prediction-using-machine-learning/data), o sistema identifica padrões complexos em variáveis de exames para prever a probabilidade de patologias cardíacas com alta precisão.
+
+---
+
+## 🧪 Metodologia e Experimentação
+O núcleo do projeto baseia-se em uma abordagem comparativa dividida em duas frentes principais:
+
+### 1. 🔍 Análise de Agrupamento e Anomalias (Não Supervisionado)
+*   **K-Means vs. Isolation Forest**: Foi realizado um estudo comparativo para avaliar qual algoritmo é mais eficaz na segmentação natural dos grupos de risco.
+*   **Propósito**: Identificar se os dados permitem uma separação clara em clusters (**K-Means**) ou se os casos de risco se comportam como anomalias estatísticas (**Isolation Forest**).
+
+### 2. 📈 Modelagem Preditiva (Supervisionado)
+*   **Regressão Logística vs. Random Forest**: Implementação de classificadores para determinar a melhor arquitetura de predição.
+*   **Diferencial**: Enquanto a **Regressão Logística** oferece uma interpretação estatística linear, o **Random Forest** captura relações não-lineares e interações complexas, visando maximizar a acurácia e o *recall* do diagnóstico.
+
+---
+
+## 📊 Pipeline de Dados
+O fluxo de trabalho está consolidado no notebook `main.ipynb` e segue as etapas:
+
+1.  **📥 Coleta**: Dados carregados localmente da pasta `/data`.
+2.  **⚙️ Pré-processamento**:
+    *   **Encoding**: Transformação de variáveis categóricas para formato numérico.
+    *   **Normalização**: Escalonamento de recursos para equilíbrio das variáveis.
+    *   **PCA (Principal Component Analysis)**: Redução de dimensionalidade para extração de componentes relevantes.
+3.  **🤖 Modelagem**:
+    *   **Não Supervisionado**: Agrupamento (`K-Means`) e Detecção de Anomalias (`Isolation Forest`).
+    *   **Supervisionado**: Classificação via `Regressão Logística` e `Random Forest`.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+*   **Linguagem**: ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat&logo=python&logoColor=white)
+*   **Machine Learning**: `Scikit-learn`
+*   **Análise de Dados**: `Pandas`, `NumPy`
+*   **Visualização**: `Seaborn`, `Matplotlib`
+*   **Containerização**: ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+
+---
+
+## 🚀 Como Testar
+
+### 💻 Via Jupyter Notebook (Local)
+1.  **Instale as dependências**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+2.  **Execute a aplicação**:
+    Abra o Jupyter e execute o arquivo `main.ipynb`.
+
+### 🐳 Via Docker
+1.  **Construa a imagem**:
+    ```bash
+    docker build -t heart-disease-ml .
+    ```
+2Aqui está o conteúdo do seu `README.md` totalmente formatado em Markdown, com uma estrutura profissional, ícones pertinentes e blocos de código prontos para uso.
+
+---
+
+# 🩺 Sistema de Inteligência para Diagnóstico Cardíaco
+
+## 📌 Objetivo e Contexto
+Este projeto desenvolve uma ferramenta de auxílio diagnóstico baseada em **Inteligência Artificial** para a classificação de risco cardíaco (**Alto Risco vs. Baixo Risco**). Utilizando o dataset clínico [Heart Disease Prediction (Kaggle)](https://www.kaggle.com/datasets/aminasalamt/heart-disease-prediction-using-machine-learning/data), o sistema identifica padrões complexos em variáveis de exames para prever a probabilidade de patologias cardíacas com alta precisão.
+
+---
+
+## 🧪 Metodologia e Experimentação
+O núcleo do projeto baseia-se em uma abordagem comparativa dividida em duas frentes principais:
+
+### 1. 🔍 Análise de Agrupamento e Anomalias (Não Supervisionado)
+*   **K-Means vs. Isolation Forest**: Foi realizado um estudo comparativo para avaliar qual algoritmo é mais eficaz na segmentação natural dos grupos de risco.
+*   **Propósito**: Identificar se os dados permitem uma separação clara em clusters (**K-Means**) ou se os casos de risco se comportam como anomalias estatísticas (**Isolation Forest**).
+
+### 2. 📈 Modelagem Preditiva (Supervisionado)
+*   **Regressão Logística vs. Random Forest**: Implementação de classificadores para determinar a melhor arquitetura de predição.
+*   **Diferencial**: Enquanto a **Regressão Logística** oferece uma interpretação estatística linear, o **Random Forest** captura relações não-lineares e interações complexas, visando maximizar a acurácia e o *recall* do diagnóstico.
+
+---
+
+## 📊 Pipeline de Dados
+O fluxo de trabalho está consolidado no notebook `main.ipynb` e segue as etapas:
+
+1.  **📥 Coleta**: Dados carregados localmente da pasta `/data`.
+2.  **⚙️ Pré-processamento**:
+    *   **Encoding**: Transformação de variáveis categóricas para formato numérico.
+    *   **Normalização**: Escalonamento de recursos para equilíbrio das variáveis.
+    *   **PCA (Principal Component Analysis)**: Redução de dimensionalidade para extração de componentes relevantes.
+3.  **🤖 Modelagem**:
+    *   **Não Supervisionado**: Agrupamento (`K-Means`) e Detecção de Anomalias (`Isolation Forest`).
+    *   **Supervisionado**: Classificação via `Regressão Logística` e `Random Forest`.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+*   **Linguagem**: ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat&logo=python&logoColor=white)
+*   **Machine Learning**: `Scikit-learn`
+*   **Análise de Dados**: `Pandas`, `NumPy`
+*   **Visualização**: `Seaborn`, `Matplotlib`
+*   **Containerização**: ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+
+---
+
+## 🚀 Como Testar
+
+### 💻 Via Jupyter Notebook (Local)
+1.  **Instale as dependências**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+2.  **Execute a aplicação**:
+    Abra o Jupyter e execute o arquivo `main.ipynb`.
+
+### 🐳 Via Docker
+1.  **Construa a imagem**:
+    ```bash
+    docker build -t heart-disease-ml .
+    ```
+2.  **Rode o container**:
+    ```bash
+    docker run -it heart-disease-ml
+    ```
+
+---
+_Desenvolvido paraAqui está o conteúdo do seu `README.md` totalmente formatado em Markdown, com uma estrutura profissional, ícones pertinentes e blocos de código prontos para uso.
+
+---
+
+# 🩺 Sistema de Inteligência para Diagnóstico Cardíaco
+
+## 📌 Objetivo e Contexto
+Este projeto desenvolve uma ferramenta de auxílio diagnóstico baseada em **Inteligência Artificial** para a classificação de risco cardíaco (**Alto Risco vs. Baixo Risco**). Utilizando o dataset clínico [Heart Disease Prediction (Kaggle)](https://www.kaggle.com/datasets/aminasalamt/heart-disease-prediction-using-machine-learning/data), o sistema identifica padrões complexos em variáveis de exames para prever a probabilidade de patologias cardíacas com alta precisão.
+
+---
+
+## 🧪 Metodologia e Experimentação
+O núcleo do projeto baseia-se em uma abordagem comparativa dividida em duas frentes principais:
+
+### 1. 🔍 Análise de Agrupamento e Anomalias (Não Supervisionado)
+*   **K-Means vs. Isolation Forest**: Foi realizado um estudo comparativo para avaliar qual algoritmo é mais eficaz na segmentação natural dos grupos de risco.
+*   **Propósito**: Identificar se os dados permitem uma separação clara em clusters (**K-Means**) ou se os casos de risco se comportam como anomalias estatísticas (**Isolation Forest**).
+
+### 2. 📈 Modelagem Preditiva (Supervisionado)
+*   **Regressão Logística vs. Random Forest**: Implementação de classificadores para determinar a melhor arquitetura de predição.
+*   **Diferencial**: Enquanto a **Regressão Logística** oferece uma interpretação estatística linear, o **Random Forest** captura relações não-lineares e interações complexas, visando maximizar a acurácia e o *recall* do diagnóstico.
+
+---
+
+## 📊 Pipeline de Dados
+O fluxo de trabalho está consolidado no notebook `main.ipynb` e segue as etapas:
+
+1.  **📥 Coleta**: Dados carregados localmente da pasta `/data`.
+2.  **⚙️ Pré-processamento**:
+    *   **Encoding**: Transformação de variáveis categóricas para formato numérico.
+    *   **Normalização**: Escalonamento de recursos para equilíbrio das variáveis.
+    *   **PCA (Principal Component Analysis)**: Redução de dimensionalidade para extração de componentes relevantes.
+3.  **🤖 Modelagem**:
+    *   **Não Supervisionado**: Agrupamento (`K-Means`) e Detecção de Anomalias (`Isolation Forest`).
+    *   **Supervisionado**: Classificação via `Regressão Logística` e `Random Forest`.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+*   **Linguagem**: ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=flat&logo=python&logoColor=white)
+*   **Machine Learning**: `Scikit-learn`
+*   **Análise de Dados**: `Pandas`, `NumPy`
+*   **Visualização**: `Seaborn`, `Matplotlib`
+*   **Containerização**: ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+
+---
+
+## 🚀 Como Testar
+
+### 💻 Via Jupyter Notebook (Local)
+1.  **Instale as dependências**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+2.  **Execute a aplicação**:
+    Abra o Jupyter e execute o arquivo `main.ipynb`.
+
+### 🐳 Via Docker
+1.  **Construa a imagem**:
+    ```bash
+    docker build -t tecchallenge1-ab .
+    ```
+2.  **Rode o container**:
+    ```bash
+    docker run -it tecchallenge1-ab
+    ```
+
+---
+_Desenvolvido para fins de estudo e auxílio diagnóstico em saúde._
