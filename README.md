@@ -1,4 +1,4 @@
-O objetivo principal é fornecer uma ferramenta de auxílio diagnóstico que identifique padrões em dados clínicos para prever a probabilidade de condições cardíacas, utilizando o dataset "Heart Disease Prediction" do Kaggle. link: (https://www.kaggle.com/datasets/aminasalamt/heart-disease-prediction-using-machine-learning/data) 
+O objetivo principal é fornecer uma ferramenta de auxílio diagnóstico que identifique padrões em dados clínicos para prever a probabilidade de condições cardíacas, e classificar em alto ou baixo risco. Foi utilizado o dataset "Heart Disease Prediction" do Kaggle. link: (https://www.kaggle.com/datasets/aminasalamt/heart-disease-prediction-using-machine-learning/data) 
 
 ## 📊 Pipeline de Dados
 
