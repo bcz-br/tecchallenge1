@@ -37,7 +37,7 @@ O fluxo de trabalho está consolidado no notebook `main.ipynb` e segue as etapas
 *   **Machine Learning**: `Scikit-learn`
 *   **Análise de Dados**: `Pandas`, `NumPy`
 *   **Visualização**: `Seaborn`, `Matplotlib`
-*   **Containerização**: ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+
 
 ---
 
